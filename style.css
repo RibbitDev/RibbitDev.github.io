@@ -1,0 +1,225 @@
+/* ===================
+   Global Body Styles
+   =================== */
+   body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: rgb(255, 254, 252);
+}
+
+
+.main-text {
+    color: rgb(68, 61, 49);
+    font-family: 'Inter', serif;
+    font-size: clamp(1.6rem, 4vw, 3rem);
+    padding: 2rem 1.5rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===================
+   Header and Branding
+   =================== */
+header {
+    text-align: center;
+    padding-top: 160px; /* accommodates fixed nav bar */
+    color: #F0E6D9;
+}
+
+.logo-img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+/* ===================
+   Top Bar & Navigation
+   =================== */
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: rgb(255, 254, 252);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: rgb(68, 61, 49);
+    font-family: 'Inter', serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    /* color: #ff772e; */
+    color: #2e8eff;
+}
+
+.top-logo {
+    width: clamp(100px, 12vw, 180px);
+}
+
+.left-stars,
+.right-stars {
+    width: clamp(120px, 18vw, 460px);
+    height: auto;
+}
+/* 
+.left-stars {
+    width: 460px;
+    height: auto;
+    display: block;
+    transform: translate(-15px, -25px);
+    position: relative;
+    padding: 0px 0px;
+    top: 0;
+    left: -30px;
+    right: 0px;
+    z-index: 9999;
+}
+.right-stars {
+    width: 460px;
+    height: auto;
+    display: block;
+    transform: translate(-15px, -25px);
+    position: relative;
+    padding: 0px 0px;
+    top: 0;
+    left: 30px;
+    right: 0;
+    z-index: 9999;
+} */
+
+
+.top-right-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+    transform: scale(1.15);
+}
+
+.icon-btn svg {
+    width: 22px;
+    height: 22px;
+    fill: white;
+}
+/* ===================
+   Footer Styling
+   =================== */
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+button {
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 185, 129, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
+  @media (max-width: 768px) {
+
+    .top-left {
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .left-stars,
+    .right-stars {
+        display: none;
+    }
+
+    header {
+    padding-top: clamp(100px, 12vh, 160px);
+    }
+
+    .main-text {
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+
