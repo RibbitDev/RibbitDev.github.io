@@ -4,7 +4,7 @@
     <!-- Meta Configuration -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>digital-business-card</title>
+    <title>Cheyenne - Home</title>
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,40 +12,59 @@
     <!-- Font Preloading for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    </head>
+</head>
 
-    <body>
-    <!-- Top Right Login Button -->
-        <!-- From Uiverse.io by reglobby -->
+<body>
+    <!-- Top Bar -->
     <div class="top-bar">
         <div class="top-left">
-        <!-- Nav Bar -->
-        <img src="assets/images/stars-left.png" alt="Name" class="left-stars">
-        <nav class="nav-links">
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-        </nav>
-        <img src="assets/images/LOGO.png" alt="Name" class="top-logo">
-        <nav class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Resume</a>
-        </nav>
-        <img src="assets/images/stars-right.png" alt="Name" class="right-stars">
+            <!-- Nav Bar -->
+            <img src="assets/images/stars-left.png" alt="Name" class="left-stars">
+            <nav class="nav-links">
+                <a href="pages/projects.html">Projects</a>
+                <a href="pages/blog.html">Blog</a>
+            </nav>
+            <img src="assets/images/LOGO.png" alt="Name" class="top-logo">
+            <nav class="nav-links">
+                <a href="pages/about.html">About</a>
+                <a href="pages/resume.html">Resume</a>
+            </nav>
+            <img src="assets/images/stars-right.png" alt="Name" class="right-stars">
         </div>
+        
+        <!-- Hamburger Button (Mobile) -->
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <a href="pages/projects.html" class="mobile-nav-link">Projects</a>
+            <a href="pages/blog.html" class="mobile-nav-link">Blog</a>
+            <a href="pages/about.html" class="mobile-nav-link">About</a>
+            <a href="pages/resume.html" class="mobile-nav-link">Resume</a>
+        </nav>
     </div>
 
     <!-- Main Header Section -->
     <header>
     </header>
+    
     <!-- Body Section -->
-     <p class="main-text"> Hiya! My name is <b>cheyenne</b>. <br> I am a information technology student majoring in AI</p>
+    <p class="main-text"> Hiya! My name is <b>cheyenne</b>. <br> I am a information technology student majoring in AI</p>
+    
     <!-- Footer -->
     <footer>
         <nav aria-label="Footer navigation">
-        About &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
+        <a href="pages/about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
         </nav>
     </footer>
+    
     <!-- JavaScript File -->
     <script src="scripts/main.js"></script>
-    </body>
-    </html>
+</body>
+</html>
