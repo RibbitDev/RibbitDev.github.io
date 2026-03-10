@@ -10,6 +10,13 @@
 </head>
 
 <body class="scrapbook-body">
+    <!-- Hamburger Button (Mobile) -->
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+
     <!-- Top Bar -->
     <div class="top-bar scrapbook-nav">
         <div class="top-left">
@@ -25,12 +32,6 @@
             </nav>
             <img src="../assets/images/stars-right.png" alt="Name" class="right-stars">
         </div>
-        
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
     </div>
 
     <!-- Mobile Navigation Overlay -->
@@ -46,244 +47,87 @@
     <!-- Main Content -->
     <main class="scrapbook-container">
         
-        <!-- Background Decorations -->
+        <!-- Paper texture background -->
         <div class="paper-texture"></div>
-        <div class="confetti c1">✦</div>
-        <div class="confetti c2">✧</div>
-        <div class="confetti c3">✿</div>
-        <div class="confetti c4">★</div>
-        <div class="confetti c5">☆</div>
+        
+        <!-- Decorative Stickers -->
+        <img src="../assets/images/gold_star.png" alt="" class="fixed-sticker" style="width: 40px; top: 100px; left: 3%;">
+        <img src="../assets/images/green_star.png" alt="" class="fixed-sticker" style="width: 35px; top: 280px; right: 5%;">
+        <img src="../assets/images/red_star.png" alt="" class="fixed-sticker" style="width: 30px; top: 480px; left: 8%;">
+        <img src="../assets/images/flower_button.png" alt="" class="fixed-sticker" style="width: 45px; top: 650px; right: 10%;">
+        <img src="../assets/images/brown_star.png" alt="" class="fixed-sticker" style="width: 35px; bottom: 200px; left: 5%;">
+        <img src="../assets/images/spiral_star.png" alt="" class="fixed-sticker" style="width: 40px; top: 80px; right: 15%;">
+        
+        <!-- Page Title -->
+        <section class="about-hero-section">
+            <h1 class="about-page-title">About Me</h1>
+        </section>
 
-        <!-- Draggable Stickers -->
-        <div class="sticker draggable" data-x="0" data-y="0" style="top: 150px; left: 5%;">🦋</div>
-        <div class="sticker draggable" data-x="0" data-y="0" style="top: 300px; right: 8%;">✨</div>
-        <div class="sticker draggable" data-x="0" data-y="0" style="top: 500px; left: 3%;">⭐</div>
-        <div class="sticker draggable" data-x="0" data-y="0" style="bottom: 200px; right: 5%;">💚</div>
-        <div class="sticker draggable" data-x="0" data-y="0" style="top: 700px; right: 15%;">🌸</div>
-
-        <!-- Magic 8-Ball -->
-        <div class="magic-8ball" id="magic8ball">
-            <div class="8ball-inner">
-                <div class="8ball-window">
-                    <span class="8ball-message">🧿</span>
-                </div>
-            </div>
-            <span class="8ball-label">click me</span>
-        </div>
-
-        <!-- Hero Section -->
-        <section class="scrapbook-hero">
+        <!-- First Row: About Me + Photo -->
+        <section class="about-row-1">
             
-            <!-- Photo with Polaroid Frame -->
-            <div class="polaroid-frame" style="--rotation: -4deg; --z: 10;">
-                <div class="washi-tape pink" style="top: -8px; left: 20px;"></div>
-                <div class="washi-tape sage" style="top: -8px; right: 20px;"></div>
-                <div class="photo-inner">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Cheyenne" class="profile-photo">
-                </div>
-                <div class="photo-caption">me ✧</div>
-                <div class="pushpin red"></div>
+            <!-- About Me Card -->
+            <div class="about-card-crafty" style="--rotation: -2deg;">
+                <div class="washi-tape pink" style="top: -10px; left: 30px;"></div>
+                <div class="paper-overlay"></div>
+                <h2 class="crafty-title">Hello!</h2>
+                <p class="crafty-text">I'm Cheyenne — an IT student majoring in AI with a passion for creating meaningful technology that helps people.</p>
+                <p class="crafty-text">I love blending creativity with code to build things that make a difference. When I'm not studying or coding, you'll find me exploring my creative side through various hobbies.</p>
+                <div class="cute-decoration">✦</div>
             </div>
 
-            <!-- About Card with Torn Edges -->
-            <div class="scrapbook-card about-card-scrapbook flip-card" style="--rotation: 2deg; --z: 5;">
-                <div class="washi-tape lavender" style="top: -10px; left: 30px;"></div>
-                <div class="paper-clip silver" style="top: -15px; right: 20px;"></div>
-                <div class="torn-edge-top"></div>
-                
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <h2 class="scrapbook-title">About Me</h2>
-                        <p class="scrapbook-text">I'm Cheyenne — an IT student weaving spells through AI, collecting moments through my lens, and finding magic in the everyday.</p>
-                        <span class="flip-hint">click to flip ✦</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <h2 class="scrapbook-title">More About Me</h2>
-                        <p class="scrapbook-text">Bachelor of IT majoring in AI. Passionate about human-centered AI that empowers people. Exploring machine learning, neural networks, and adaptive algorithms.</p>
-                        <p class="scrapbook-text">Currently expanding skills in ML, neural networks, and AI-driven design. Let's connect!</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Intro Note -->
-            <div class="sticky-note" style="--rotation: -3deg; --z: 8;">
-                <div class="note-content">
-                    <h3>Hello! 👋</h3>
-                    <p>Welcome to my little corner of the internet ✧</p>
-                </div>
+            <!-- Photo Polaroid -->
+            <div class="polaroid-crafty" style="--rotation: 3deg;">
+                <img src="../assets/images/me.png" class="polaroid-crafty">
             </div>
 
         </section>
 
-        <!-- Second Row -->
-        <section class="scrapbook-row-2">
+        <!-- Second Row: Interests + Hobbies -->
+        <section class="about-row-2">
             
-            <!-- Hobbies -->
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: -5deg; --z: 6;">
-                <div class="pushpin green" style="top: -12px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">🎨</div>
-                        <h3 class="hobby-title-scrap">Art</h3>
-                        <p class="hobby-desc-scrap">Digital & analog spellcraft</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Creating digital illustrations, sketches, and hand-drawn art. Love experimenting with different mediums!</p>
-                    </div>
-                </div>
+            <!-- Interests Card -->
+            <div class="crafty-card" style="--rotation: -1deg;">
+                <div class="washi-tape lavender" style="top: -8px; left: 20px;"></div>
+                <div class="card-icon">⭐</div>
+                <h3 class="crafty-card-title">Interests</h3>
+                <ul class="crafty-list">
+                    <li>Artificial Intelligence & Machine Learning</li>
+                    <li>Web Development</li>
+                    <li>Human-Centered Technology</li>
+                    <li>Neural Networks</li>
+                </ul>
             </div>
 
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: 4deg; --z: 4;">
-                <div class="pushpin yellow" style="top: -12px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">📷</div>
-                        <h3 class="hobby-title-scrap">Photography</h3>
-                        <p class="hobby-desc-scrap">Capturing fleeting moments</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Love photography — from street shots to portraits. Finding beauty in the everyday.</p>
-                    </div>
-                </div>
+            <!-- Hobbies Card -->
+            <div class="crafty-card" style="--rotation: 2deg;">
+                <div class="washi-tape pink" style="top: -8px; right: 20px;"></div>
+                <div class="card-icon">💝</div>
+                <h3 class="crafty-card-title">Hobbies</h3>
+                <ul class="crafty-list">
+                    <li>Painting</li>
+                    <li>Photography</li>
+                    <li>Reading</li>
+                    <li>Tennis</li>
+                </ul>
             </div>
 
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: -2deg; --z: 7;">
-                <div class="washi-tape pink" style="top: -8px; right: 15px; width: 30px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">🎵</div>
-                        <h3 class="hobby-title-scrap">Live Music</h3>
-                        <p class="hobby-desc-scrap">Concerts & festivals</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Nothing beats live music! Always looking for the next great concert to attend.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quote Card -->
-            <div class="scrapbook-card quote-card-scrapbook" style="--rotation: 3deg; --z: 3;">
-                <div class="stamp">✦</div>
-                <blockquote class="quote-text-scrap">"The best way to predict the future is to create it."</blockquote>
-                <cite class="quote-author-scrap">— Peter Drucker</cite>
+            <!-- Fun Fact Card -->
+            <div class="crafty-card funfact-crafty" style="--rotation: -3deg;">
+                <div class="card-icon">🐸</div>
+                <h3 class="crafty-card-title">Fun Fact</h3>
+                <p class="crafty-text-small">Frogs have captured my heart — ancient, mystical creatures full of quiet magic. Green is definitely my soul color! 💚</p>
+                <div class="color-dot green"></div>
             </div>
 
         </section>
 
-        <!-- Third Row -->
-        <section class="scrapbook-row-3">
-            
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: 5deg; --z: 2;">
-                <div class="pushpin purple" style="top: -12px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">📚</div>
-                        <h3 class="hobby-title-scrap">Reading</h3>
-                        <p class="hobby-desc-scrap">Lost in magical worlds</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Always reading something — fantasy, sci-fi, philosophy, you name it!</p>
-                    </div>
-                </div>
+        <!-- Third Row: Quote -->
+        <section class="about-row-3">
+            <div class="quote-crafty-card" style="--rotation: 1deg;">
+                <div class="washi-tape sage" style="top: -10px; left: 40px;"></div>
+                <img src="../assets/images/quote.png" alt="" class="quote-image">
             </div>
-
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: -4deg; --z: 9;">
-                <div class="paper-clip gold" style="top: -15px; left: 20px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">💭</div>
-                        <h3 class="hobby-title-scrap">Philosophy</h3>
-                        <p class="hobby-desc-scrap">Ancient wisdom & mysteries</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Love deep discussions about life, existence, and the big questions.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: 2deg; --z: 1;">
-                <div class="pushpin orange" style="top: -12px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">🎮</div>
-                        <h3 class="hobby-title-scrap">Video Games</h3>
-                        <p class="hobby-desc-scrap">Quests & virtual realms</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Gaming for fun and inspiration. RPGs, indie games, and cozy games are my jam!</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fun Fact: Frogs -->
-            <div class="scrapbook-card funfact-card-scrapbook" style="--rotation: -3deg; --z: 5;">
-                <div class="washi-tape sage" style="top: -8px; left: 25px;"></div>
-                <div class="funfact-content">
-                    <div class="frog-emoji">✨🐸✨</div>
-                    <h3 class="funfact-title-scrap">My Familiar</h3>
-                    <p class="funfact-desc-scrap">Frogs have captured my heart — ancient, mystical creatures full of quiet magic. 🐸💚</p>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Fourth Row -->
-        <section class="scrapbook-row-4">
-            
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: -2deg; --z: 4;">
-                <div class="pushpin pink" style="top: -12px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">💻</div>
-                        <h3 class="hobby-title-scrap">Web Design</h3>
-                        <p class="hobby-desc-scrap">Weaving web enchantments</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">Building websites that blend creativity with technology. This site is a passion project!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scrapbook-card hobby-card-scrapbook flip-card" style="--rotation: 4deg; --z: 3;">
-                <div class="paper-clip bronze" style="top: -15px; right: 15px;"></div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <div class="hobby-icon-scrap">🎾</div>
-                        <h3 class="hobby-title-scrap">Tennis</h3>
-                        <p class="hobby-desc-scrap">Watching from the sidelines 😅</p>
-                        <span class="flip-hint">flip</span>
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="flip-detail">I'm really bad at tennis... but I love watching matches! Go team! 🎾</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fun Fact: Green -->
-            <div class="scrapbook-card funfact-card-scrapbook green-card" style="--rotation: 3deg; --z: 6;">
-                <div class="color-gem-scrap"></div>
-                <div class="funfact-content">
-                    <h3 class="funfact-title-scrap">Enchanted Green</h3>
-                    <p class="funfact-desc-scrap">My soul color — the hue of moss, forests, and magic. 🌿💚</p>
-                </div>
-            </div>
-
-            <!-- Connect Card -->
-            <div class="scrapbook-card connect-card-scrapbook" style="--rotation: -5deg; --z: 7;">
-                <div class="ribbon-bow"></div>
-                <div class="torn-edge-bottom"></div>
-                <h2 class="connect-title-scrap">Let's Connect ✉</h2>
-                <p class="connect-desc-scrap">I'd love to hear your stories, share ideas, or chat about magic & tech.</p>
-                <a href="resume.html" class="connect-btn-scrap">Send a Message</a>
-            </div>
-
         </section>
 
     </main>
