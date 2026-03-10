@@ -135,38 +135,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ===================
-    // Magic 8-Ball
-    // ===================
-    const magic8ball = document.getElementById('magic8ball');
-    
-    const messages = [
-        "Your spell is working! ✨",
-        "Magic awaits...",
-        "The frogs are watching... 🐸",
-        "Something magical is coming...",
-        "Trust your intuition ✨",
-        "A creative adventure awaits!",
-        "The universe supports your dreams 💚",
-        "Magical things are happening! ✦",
-        "Your destiny is being woven...",
-        "Embrace the mystery ✧"
-    ];
 
-    if (magic8ball) {
-        magic8ball.addEventListener('click', () => {
-            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            const messageSpan = magic8ball.querySelector('.8ball-message');
+
+    // ===================
+    // Contact Form - mailto handler
+    // ===================
+    const contactForm = document.getElementById('contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
             
-            messageSpan.style.animation = 'none';
-            messageSpan.offsetHeight; // Trigger reflow
-            messageSpan.style.animation = 'pulse 0.5s ease';
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
             
-            messageSpan.textContent = '🔮';
+            // email address 
+            const toEmail = 'cheyenne.clark@adelaide.edu.au';
             
-            setTimeout(() => {
-                alert('🔮 ' + randomMessage);
-            }, 200);
+            // Build the email body
+            const body = `Hi Cheyenne,
+
+My name: ${name}
+My email: ${email}
+
+Message:
+${message}
+
+---
+Sent from your website contact form`;
+            
+            // Encode for URL
+            const encodedSubject = encodeURIComponent(subject);
+            const encodedBody = encodeURIComponent(body);
+            
+            // Open mailto link
+            window.location.href = `mailto:${toEmail}?subject=${encodedSubject}&body=${encodedBody}`;
         });
     }
 });
