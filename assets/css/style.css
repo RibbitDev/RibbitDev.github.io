@@ -334,3 +334,874 @@ button {
     }
 }
 
+/* ===================
+   Resume Page Styles
+   =================== */
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: rgb(68, 61, 49);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #2e8eff, #60a5fa);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: rgb(120, 110, 95);
+    margin-bottom: 3.5rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+/* Contact Form */
+.contact-section {
+    margin-bottom: 6rem;
+}
+
+.contact-form {
+    background: linear-gradient(145deg, #ffffff, #fafaf8);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.06),
+        0 1px 3px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.form-group {
+    margin-bottom: 1.75rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    color: rgb(68, 61, 49);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 1.5px solid #e8e5df;
+    border-radius: 12px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: #d0ccc5;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2e8eff;
+    box-shadow: 
+        0 0 0 4px rgba(46, 142, 255, 0.12),
+        0 4px 12px rgba(46, 142, 255, 0.08);
+    background: #fff;
+    transform: translateY(-1px);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23644B2F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 3rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.15rem 2.5rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(31, 41, 55, 0.25);
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(31, 41, 55, 0.35);
+    background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+}
+
+.submit-btn:hover::before {
+    left: 100%;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(31, 41, 55, 0.2);
+}
+
+/* Timeline */
+.timeline-section {
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, #2e8eff 0%, #93c5fd 50%, #e5e2dc 100%);
+    border-radius: 2px;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-entry.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #2e8eff, #60a5fa);
+    border-radius: 50%;
+    border: 3px solid rgb(255, 254, 252);
+    box-shadow: 
+        0 0 0 3px rgba(46, 142, 255, 0.2),
+        0 2px 8px rgba(46, 142, 255, 0.3);
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.timeline-entry:hover::before {
+    transform: translateX(-5px) scale(1.2);
+    box-shadow: 
+        0 0 0 4px rgba(46, 142, 255, 0.3),
+        0 4px 12px rgba(46, 142, 255, 0.4);
+}
+
+.timeline-date {
+    display: inline-block;
+    background: linear-gradient(135deg, #2e8eff, #3b82f6);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    box-shadow: 0 2px 8px rgba(46, 142, 255, 0.25);
+}
+
+.timeline-content {
+    background: linear-gradient(145deg, #ffffff, #fafaf8);
+    padding: 1.75rem;
+    border-radius: 16px;
+    box-shadow: 
+        0 4px 20px rgba(0, 0, 0, 0.05),
+        0 1px 2px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #2e8eff, #60a5fa);
+    border-radius: 4px 0 0 4px;
+}
+
+.timeline-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 12px 40px rgba(0, 0, 0, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.timeline-title {
+    font-size: 1.35rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.4rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.timeline-company {
+    color: #2e8eff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 1rem;
+    letter-spacing: 0.02em;
+}
+
+.timeline-description {
+    color: rgb(100, 90, 75);
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.995rem;
+}
+
+/* Mobile styles for resume */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 100px 16px 40px;
+    }
+
+    .contact-form {
+        padding: 1.75rem;
+        border-radius: 16px;
+    }
+
+    .timeline {
+        padding-left: 2rem;
+    }
+
+    .timeline::before {
+        left: -0.5rem;
+    }
+
+    .timeline-entry::before {
+        left: -2rem;
+        transform: translateX(-4px);
+    }
+
+    .timeline-entry:hover::before {
+        transform: translateX(-4px) scale(1.15);
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+        border-radius: 14px;
+    }
+}
+
+/* ===================
+   About Page - Scrapbook Style
+   =================== */
+.about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 140px 20px 60px;
+    position: relative;
+}
+
+/* Hero Section */
+.about-hero {
+    margin-bottom: 3rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* Photo Frame */
+.photo-frame {
+    grid-column: 1 / 3;
+    max-width: 220px;
+    background: #fff;
+    padding: 0.75rem 0.75rem 2rem 0.75rem;
+    box-shadow: 
+        0 6px 24px rgba(0, 0, 0, 0.1),
+        0 2px 6px rgba(0, 0, 0, 0.06);
+    position: relative;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.photo-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Caveat', cursive;
+    font-size: 1.25rem;
+    color: rgb(68, 61, 49);
+    background: rgba(255, 254, 252, 0.9);
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+}
+
+/* Washi Tape */
+.washi-tape {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ffaac4 50%, #ffb6c1 100%);
+    opacity: 0.85;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.washi-tape.top-left {
+    top: -8px;
+    left: 20px;
+    transform: rotate(-8deg);
+}
+
+.washi-tape.top-right {
+    top: -8px;
+    right: 20px;
+    transform: rotate(8deg);
+    background: linear-gradient(135deg, #98d8c8 0%, #7ec8b8 50%, #98d8c8 100%);
+}
+
+/* Mii Frame */
+.mii-frame {
+    grid-column: 3 / 5;
+    width: 100px;
+    background: linear-gradient(145deg, #fff9e6, #fff3cc);
+    padding: 6px;
+    border-radius: 50%;
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.08),
+        inset 0 2px 4px rgba(255, 255, 255, 0.8);
+    position: relative;
+    top: 40px;
+    transform: rotate(4deg);
+    transition: transform 0.3s ease;
+}
+
+.mii-frame:hover {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.mii-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Intro Card */
+.intro-card {
+    grid-column: 5 / 7;
+    background: linear-gradient(145deg, #fffef8, #fdfcf5);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.06),
+        0 1px 3px rgba(0, 0, 0, 0.04);
+    position: relative;
+    transform: rotate(2deg);
+    top: 10px;
+}
+
+.hello-text {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 1rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: rgb(100, 90, 75);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Rotations - More variety for organic feel */
+.rotate-left {
+    transform: rotate(-2deg);
+}
+
+.rotate-right {
+    transform: rotate(2deg);
+}
+
+.rotate-3deg {
+    transform: rotate(-3deg);
+}
+
+.rotate--3deg {
+    transform: rotate(3deg);
+}
+
+.rotate-1deg {
+    transform: rotate(-1deg);
+}
+
+.rotate-none {
+    transform: rotate(0deg);
+}
+
+/* Scrapbook Grid */
+.scrapbook-section {
+    position: relative;
+}
+
+.scrapbook-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    grid-auto-flow: dense;
+}
+
+/* Card spans */
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+/* Scrap Cards */
+.scrap-card {
+    background: linear-gradient(145deg, #fffef8, #fff9f0);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.06),
+        0 1px 3px rgba(0, 0, 0, 0.04);
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.scrap-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 
+        0 12px 32px rgba(0, 0, 0, 0.1),
+        0 4px 8px rgba(0, 0, 0, 0.06);
+    z-index: 10;
+}
+
+/* Card Patterns */
+.card-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    pointer-events: none;
+}
+
+.card-pattern.dots {
+    background-image: radial-gradient(circle, #2e8eff 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+.card-pattern.lines {
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 10px,
+        #2e8eff 10px,
+        #2e8eff 11px
+    );
+}
+
+/* About Card - spans 2 columns */
+.about-card {
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 2rem;
+}
+
+.card-title {
+    font-family: 'Caveat', cursive;
+    font-size: 1.75rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 1rem;
+    position: relative;
+}
+
+.card-text {
+    color: rgb(100, 90, 75);
+    line-height: 1.8;
+    margin: 0 0 1rem;
+    font-size: 0.95rem;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Stickers */
+.sticker {
+    position: absolute;
+    font-size: 1.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    z-index: 5;
+}
+
+.sticker-star {
+    top: 10px;
+    right: 15px;
+    transform: rotate(15deg);
+}
+
+.sticker-frog {
+    top: -10px;
+    right: -5px;
+    font-size: 2rem;
+    transform: rotate(-10deg);
+}
+
+.sticker-sparkle {
+    top: 15px;
+    right: 20px;
+    font-size: 1.75rem;
+    transform: rotate(25deg);
+    color: #2e8eff;
+}
+
+/* Hobby Cards */
+.hobby-card {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.hobby-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.25rem;
+}
+
+.hobby-desc {
+    font-size: 0.85rem;
+    color: rgb(100, 90, 75);
+    margin: 0;
+    font-style: italic;
+}
+
+/* Fun Fact Cards */
+.funfact-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #f0fff4, #e8f5e9);
+}
+
+.funfact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.funfact-icon {
+    font-size: 1.25rem;
+}
+
+.funfact-text {
+    font-weight: 600;
+    color: rgb(68, 61, 49);
+    font-size: 0.9rem;
+}
+
+.funfact-desc {
+    color: rgb(100, 90, 75);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Color Swatch */
+.color-swatch {
+    margin-bottom: 0.5rem;
+}
+
+.color-circle {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.color-circle.green {
+    background: linear-gradient(135deg, #4ade80, #22c55e, #16a34a);
+}
+
+/* Quote Card */
+.quote-card {
+    background: linear-gradient(145deg, #fef3c7, #fef9e7);
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-left: 4px solid #f59e0b;
+}
+
+.quote-text {
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.75rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 0.9rem;
+    color: rgb(100, 90, 75);
+    font-style: normal;
+}
+
+/* Connect Card */
+.connect-card {
+    grid-column: span 2;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(145deg, #eff6ff, #dbeafe);
+    border-left: 4px solid #2e8eff;
+}
+
+.connect-title {
+    font-family: 'Caveat', cursive;
+    font-size: 1.75rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.75rem;
+}
+
+.connect-text {
+    color: rgb(100, 90, 75);
+    margin: 0 0 1.5rem;
+    line-height: 1.6;
+}
+
+.connect-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2e8eff, #3b82f6);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 142, 255, 0.3);
+}
+
+.connect-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 142, 255, 0.4);
+}
+
+/* Decorative Floating Stickers */
+.deco-sticker {
+    position: fixed;
+    font-size: 2.5rem;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 100;
+    animation: float 6s ease-in-out infinite;
+}
+
+.deco-frog {
+    top: 20%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.deco-star {
+    top: 40%;
+    right: 8%;
+    animation-delay: 1.5s;
+}
+
+.deco-heart {
+    bottom: 30%;
+    left: 10%;
+    animation-delay: 3s;
+}
+
+.deco-sparkle {
+    bottom: 15%;
+    right: 5%;
+    animation-delay: 4.5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .scrapbook-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .photo-frame {
+        grid-column: 1 / 4;
+    }
+    
+    .mii-frame {
+        grid-column: 4 / 6;
+    }
+    
+    .intro-card {
+        grid-column: 1 / 7;
+        top: 0;
+    }
+    
+    .about-card {
+        grid-column: span 2;
+    }
+    
+    .connect-card {
+        grid-column: span 2;
+    }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 110px 16px 40px;
+    }
+    
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo-frame {
+        width: 80%;
+        max-width: 300px;
+        transform: rotate(-1deg);
+    }
+    
+    .mii-frame {
+        position: relative;
+        top: 0;
+        transform: rotate(3deg);
+        margin-top: 1rem;
+    }
+    
+    .intro-card {
+        transform: rotate(0deg);
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    
+    .scrapbook-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-card,
+    .connect-card {
+        grid-column: span 1;
+    }
+    
+    .about-card {
+        grid-row: auto;
+    }
+    
+    .scrap-card:hover {
+        transform: translateY(-2px);
+    }
+    
+    /* Hide decorative stickers on mobile */
+    .deco-sticker {
+        display: none;
+    }
+}
+

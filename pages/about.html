@@ -4,9 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Cheyenne</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>About page coming soon...</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-left">
+            <img src="../assets/images/stars-left.png" alt="Name" class="left-stars">
+            <nav class="nav-links">
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+            <img src="../assets/images/LOGO.png" alt="Name" class="top-logo">
+            <nav class="nav-links">
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+            <img src="../assets/images/stars-right.png" alt="Name" class="right-stars">
+        </div>
+        
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="resume.html" class="mobile-nav-link">Resume</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="about-container">
+        
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-grid">
+                <!-- Your Photo Frame -->
+                <div class="photo-frame rotate-left">
+                    <div class="washi-tape top-left"></div>
+                    <div class="washi-tape top-right"></div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Cheyenne" class="profile-photo">
+                    <span class="photo-caption">hey, it's me! 🐸</span>
+                </div>
+                
+                <!-- Wii Mii -->
+                <div class="mii-frame rotate-right">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop" alt="My Mii" class="mii-photo">
+                </div>
+                
+                <!-- Intro Card -->
+                <div class="intro-card">
+                    <h1 class="hello-text">Hello! 👋</h1>
+                    <p class="intro-text">I'm Cheyenne, a creative soul who loves blending technology with art. Welcome to my little corner of the internet!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scrapbook Masonry Grid -->
+        <section class="scrapbook-section">
+            <div class="scrapbook-grid">
+                
+                <!-- Hobbies Card: Art -->
+                <div class="scrap-card hobby-card rotate-3deg">
+                    <div class="hobby-icon">🎨</div>
+                    <h3 class="hobby-title">Art</h3>
+                    <p class="hobby-desc">Creating digital & analog art</p>
+                </div>
+
+                <!-- Quote Card -->
+                <div class="scrap-card quote-card rotate-left">
+                    <div class="sticker sticker-sparkle">✦</div>
+                    <blockquote class="quote-text">"The best way to predict the future is to create it."</blockquote>
+                    <cite class="quote-author">— Peter Drucker</cite>
+                </div>
+
+                <!-- Hobbies Card: Photography -->
+                <div class="scrap-card hobby-card rotate--3deg">
+                    <div class="hobby-icon">📷</div>
+                    <h3 class="hobby-title">Photography</h3>
+                    <p class="hobby-desc">Capturing moments</p>
+                </div>
+
+                <!-- Fun Fact: Frogs -->
+                <div class="scrap-card funfact-card rotate-right">
+                    <div class="sticker sticker-frog">🐸</div>
+                    <div class="funfact-badge">
+                        <span class="funfact-icon">🐸</span>
+                        <span class="funfact-text">Frogs are the best!</span>
+                    </div>
+                    <p class="funfact-desc">I absolutely love frogs. They're tiny, adorable, and fascinating creatures. 🐸💚</p>
+                </div>
+
+                <!-- About Me Card -->
+                <div class="scrap-card about-card span-2 rotate-left">
+                    <div class="card-pattern dots"></div>
+                    <div class="sticker sticker-star">✨</div>
+                    <h2 class="card-title">About Me</h2>
+                    <p class="card-text">I'm a Bachelor of Information Technology student majoring in Artificial Intelligence, passionate about creating AI-driven solutions that enhance accessibility, learning, and productivity. My goal is to design intuitive and user-friendly applications that empower individuals, especially in education and assistive technology.</p>
+                    <p class="card-text">With a strong interest in human-centred AI, I enjoy exploring the intersection of machine learning, neural networks, and adaptive algorithms to build impactful and efficient AI systems. My research interests include grokking, circuit efficiency, and information-theoretic methods for optimising neural networks, pushing the boundaries of AI efficiency and generalisation.</p>
+                    <p class="card-text">Currently, I'm expanding my skills in machine learning, neural networks, and AI-driven design, working on projects that bridge innovation with real-world impact. I'm always eager to collaborate on forward-thinking AI initiatives that make technology more accessible and effective.</p>
+                    <p class="card-text">Let's connect! I'd love to discuss AI, design, and innovative solutions that shape the future.</p>
+                </div>
+
+                <!-- Hobbies Card: Live Music -->
+                <div class="scrap-card hobby-card rotate-1deg">
+                    <div class="hobby-icon">🎵</div>
+                    <h3 class="hobby-title">Live Music</h3>
+                    <p class="hobby-desc">Concerts & festivals</p>
+                </div>
+
+                <!-- Hobbies Card: Reading -->
+                <div class="scrap-card hobby-card rotate--3deg">
+                    <div class="hobby-icon">📚</div>
+                    <h3 class="hobby-title">Reading</h3>
+                    <p class="hobby-desc">Always reading something</p>
+                </div>
+
+                <!-- Hobbies Card: Philosophy -->
+                <div class="scrap-card hobby-card rotate-3deg">
+                    <div class="hobby-icon">💭</div>
+                    <h3 class="hobby-title">Philosophy</h3>
+                    <p class="hobby-desc">Deep thoughts & big questions</p>
+                </div>
+
+                <!-- Hobbies Card: Video Games -->
+                <div class="scrap-card hobby-card rotate-left">
+                    <div class="hobby-icon">🎮</div>
+                    <h3 class="hobby-title">Video Games</h3>
+                    <p class="hobby-desc">Gaming for fun & inspiration</p>
+                </div>
+
+                <!-- Fun Fact: Favorite Color -->
+                <div class="scrap-card funfact-card rotate-1deg">
+                    <div class="color-swatch">
+                        <span class="color-circle green"></span>
+                    </div>
+                    <div class="funfact-badge">
+                        <span class="funfact-icon">💚</span>
+                        <span class="funfact-text">Green is my vibe!</span>
+                    </div>
+                    <p class="funfact-desc">My favorite color! There's something so calming and natural about green. 🌿</p>
+                </div>
+
+                <!-- Hobbies Card: Web Design -->
+                <div class="scrap-card hobby-card rotate-right">
+                    <div class="hobby-icon">💻</div>
+                    <h3 class="hobby-title">Web Design</h3>
+                    <p class="hobby-desc">Building cool websites</p>
+                </div>
+
+                <!-- Hobbies Card: Tennis -->
+                <div class="scrap-card hobby-card rotate-3deg">
+                    <div class="hobby-icon">🎾</div>
+                    <h3 class="hobby-title">Tennis</h3>
+                    <p class="hobby-desc">I'm really bad at it 😅</p>
+                </div>
+
+                <!-- Let's Connect Card -->
+                <div class="scrap-card connect-card span-2 rotate-right">
+                    <div class="card-pattern lines"></div>
+                    <h2 class="connect-title">Let's Connect! 📬</h2>
+                    <p class="connect-text">I'd love to hear from you! Whether it's about AI, design, or just to say hi.</p>
+                    <a href="resume.html" class="connect-btn">Get In Touch</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Decorative Elements -->
+    <div class="deco-sticker deco-frog">🐸</div>
+    <div class="deco-sticker deco-star">✨</div>
+    <div class="deco-sticker deco-heart">💚</div>
+    <div class="deco-sticker deco-sparkle">✦</div>
+
+    <!-- Footer -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <a href="about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
+        </nav>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

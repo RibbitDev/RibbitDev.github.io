@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Cheyenne</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>Resume page coming soon...</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-left">
+            <img src="../assets/images/stars-left.png" alt="Name" class="left-stars">
+            <nav class="nav-links">
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+            <img src="../assets/images/LOGO.png" alt="Name" class="top-logo">
+            <nav class="nav-links">
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+            <img src="../assets/images/stars-right.png" alt="Name" class="right-stars">
+        </div>
+        
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="resume.html" class="mobile-nav-link">Resume</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="resume-container">
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <h2 class="section-title">My Experience</h2>
+            <p class="section-subtitle">A timeline of my journey so far</p>
+            
+            <div class="timeline">
+                <div class="timeline-entry">
+                    <div class="timeline-date">2024 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">AI Student</h3>
+                        <p class="timeline-company">University</p>
+                        <p class="timeline-description">Studying Information Technology with a major in Artificial Intelligence. Focused on machine learning, neural networks, and practical AI applications.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-entry">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Tech Intern</h3>
+                        <p class="timeline-company">Tech Company Name</p>
+                        <p class="timeline-description">Gained hands-on experience with software development, data analysis, and AI projects. Collaborated with teams on real-world applications.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-entry">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Freelance Developer</h3>
+                        <p class="timeline-company">Self-employed</p>
+                        <p class="timeline-description">Built websites and small applications for local businesses. Learned client communication and project management skills.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-entry">
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Programming Hobbyist</h3>
+                        <p class="timeline-company">Self-taught</p>
+                        <p class="timeline-description">Started learning to code with Python and JavaScript. Built personal projects and participated in online coding communities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+        <section class="contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Have a question or want my resume? Send me a message!</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="question">Question</option>
+                        <option value="resume">Resume Request</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span class="label">Send Message</span>
+                    <span class="transition"></span>
+                </button>
+            </form>
+        </section>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <a href="about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
+        </nav>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
