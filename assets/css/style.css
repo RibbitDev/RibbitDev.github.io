@@ -3134,10 +3134,19 @@ button {
 .blog-empty,
 .projects-empty {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 300px;
     text-align: center;
+    position: relative;
+}
+
+.projects-deco {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+    animation: bounce 2s ease-in-out infinite;
 }
 
 .blog-empty-text,
@@ -3149,16 +3158,6 @@ button {
     position: relative;
     padding: 2rem;
 }
-
-.blog-empty-text::before,
-.projects-empty-text::before {
-    content: '✨';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
