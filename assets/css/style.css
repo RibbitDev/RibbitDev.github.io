@@ -9,7 +9,7 @@
 
 
 .main-text {
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     font-family: 'Inter', serif;
     font-size: clamp(1.6rem, 4vw, 3rem);
     padding: 2rem 1.5rem;
@@ -82,15 +82,14 @@ header {
 }
 
 .nav-links a {
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     font-family: 'Inter', serif;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
 .nav-links a:hover {
-    /* color: #ff772e; */
-    color: #2e8eff;
+    color: #a5c9e5;
 }
 
 .top-logo {
@@ -163,12 +162,12 @@ footer {
 }
 
 footer nav a {
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     text-decoration: none;
 }
 
 footer nav a:hover {
-    color: #2e8eff;
+    color: #a5c9e5;
 }
 
 button {
@@ -345,7 +344,7 @@ button {
 
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     text-align: center;
     margin-bottom: 0.5rem;
     font-weight: 800;
@@ -358,7 +357,7 @@ button {
     display: block;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #2e8eff, #60a5fa);
+    background: linear-gradient(90deg, #a5c9e5, #8aa979);
     margin: 1rem auto 0;
     border-radius: 2px;
 }
@@ -395,7 +394,7 @@ button {
 .form-group label {
     display: block;
     margin-bottom: 0.6rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 0.02em;
@@ -454,7 +453,7 @@ button {
     font-size: 1.05rem;
     font-weight: 600;
     letter-spacing: 0.03em;
-    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    background: linear-gradient(135deg, #e1786c 0%, #f9c77b 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -462,7 +461,7 @@ button {
     position: relative;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 15px rgba(31, 41, 55, 0.25);
+    box-shadow: 0 4px 15px rgba(225, 120, 108, 0.25);
 }
 
 .submit-btn::before {
@@ -478,8 +477,8 @@ button {
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(31, 41, 55, 0.35);
-    background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+    box-shadow: 0 8px 25px rgba(225, 120, 108, 0.35);
+    background: linear-gradient(135deg, #f9c77b 0%, #e1786c 100%);
 }
 
 .submit-btn:hover::before {
@@ -488,7 +487,7 @@ button {
 
 .submit-btn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 10px rgba(31, 41, 55, 0.2);
+    box-shadow: 0 2px 10px rgba(225, 120, 108, 0.2);
 }
 
 /* Timeline */
@@ -508,7 +507,7 @@ button {
     top: 8px;
     bottom: 8px;
     width: 2px;
-    background: linear-gradient(180deg, #2e8eff 0%, #93c5fd 50%, #e5e2dc 100%);
+    background: linear-gradient(180deg, #a5c9e5 0%, #8aa979 50%, #e5e2dc 100%);
     border-radius: 2px;
 }
 
@@ -532,12 +531,12 @@ button {
     top: 6px;
     width: 14px;
     height: 14px;
-    background: linear-gradient(135deg, #2e8eff, #60a5fa);
+    background: linear-gradient(135deg, #a5c9e5, #8aa979);
     border-radius: 50%;
     border: 3px solid rgb(255, 254, 252);
     box-shadow: 
-        0 0 0 3px rgba(46, 142, 255, 0.2),
-        0 2px 8px rgba(46, 142, 255, 0.3);
+        0 0 0 3px rgba(165, 201, 229, 0.2),
+        0 2px 8px rgba(165, 201, 229, 0.3);
     transform: translateX(-5px);
     transition: all 0.3s ease;
 }
@@ -545,21 +544,21 @@ button {
 .timeline-entry:hover::before {
     transform: translateX(-5px) scale(1.2);
     box-shadow: 
-        0 0 0 4px rgba(46, 142, 255, 0.3),
-        0 4px 12px rgba(46, 142, 255, 0.4);
+        0 0 0 4px rgba(165, 201, 229, 0.3),
+        0 4px 12px rgba(165, 201, 229, 0.4);
 }
 
 .timeline-date {
     display: inline-block;
-    background: linear-gradient(135deg, #2e8eff, #3b82f6);
-    color: white;
+    background: linear-gradient(135deg, #a5c9e5, #8aa979);
+    color: #3b3427;
     padding: 0.4rem 1rem;
     border-radius: 25px;
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: 0.05em;
-    box-shadow: 0 2px 8px rgba(46, 142, 255, 0.25);
+    box-shadow: 0 2px 8px rgba(165, 201, 229, 0.25);
 }
 
 .timeline-content {
@@ -595,14 +594,14 @@ button {
 
 .timeline-title {
     font-size: 1.35rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.4rem;
     font-weight: 700;
     letter-spacing: -0.01em;
 }
 
 .timeline-company {
-    color: #2e8eff;
+    color: #e1786c;
     font-weight: 600;
     font-size: 0.95rem;
     margin: 0 0 1rem;
@@ -610,7 +609,7 @@ button {
 }
 
 .timeline-description {
-    color: rgb(100, 90, 75);
+    color: #3b3427;
     margin: 0;
     line-height: 1.7;
     font-size: 0.995rem;
@@ -647,6 +646,189 @@ button {
     .timeline-content {
         padding: 1.5rem;
         border-radius: 14px;
+    }
+}
+
+/* ===================
+   Resume Page - Additional Styles
+   =================== */
+
+/* Resume Header */
+.resume-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #0077b5, #0a66c2);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.linkedin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
+    background: linear-gradient(135deg, #0a66c2, #0077b5);
+}
+
+.linkedin-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.profile-text {
+    color: rgb(100, 90, 75);
+    line-height: 1.8;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Timeline List */
+.timeline-list {
+    margin: 0.75rem 0 0;
+    padding-left: 1.25rem;
+    color: rgb(100, 90, 75);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.timeline-list li {
+    margin-bottom: 0.35rem;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: linear-gradient(145deg, #ffffff, #fafaf8);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #2e8eff;
+}
+
+.skill-title {
+    font-size: 1.15rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+}
+
+.skill-description {
+    color: rgb(100, 90, 75);
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.9rem;
+}
+
+/* Attributes Section */
+.attributes-section {
+    margin-bottom: 3rem;
+}
+
+.attributes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.attribute-card {
+    background: linear-gradient(145deg, #f0fff4, #e8f5e9);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.attribute-title {
+    font-size: 1rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+}
+
+.attribute-description {
+    color: rgb(100, 90, 75);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.85rem;
+}
+
+/* Licences Section */
+.licences-section {
+    margin-bottom: 3rem;
+}
+
+.licences-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.licence-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg, #ffffff, #fafaf8);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.licence-name {
+    color: rgb(68, 61, 49);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.licence-status {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 0.35rem 1rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Resume Mobile */
+@media (max-width: 768px) {
+    .linkedin-btn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.85rem;
+    }
+    
+    .skills-grid,
+    .attributes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .licence-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
     }
 }
 
@@ -1732,13 +1914,13 @@ button {
 
 .projects-title {
     font-size: clamp(2rem, 5vw, 3rem);
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin-bottom: 0.5rem;
     font-weight: 800;
 }
 
 .projects-subtitle {
-    color: rgb(100, 90, 75);
+    color: #3b3427;
     font-size: 1.1rem;
 }
 
@@ -1807,14 +1989,14 @@ button {
 
 .project-link {
     display: inline-block;
-    color: #2e8eff;
+    color: #e1786c;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.2s ease;
 }
 
 .project-link:hover {
-    color: #1a6fd8;
+    color: #f9c77b;
 }
 
 /* ===================
@@ -2876,13 +3058,13 @@ button {
 
 .blog-title {
     font-size: clamp(2rem, 5vw, 3rem);
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin-bottom: 0.5rem;
     font-weight: 800;
 }
 
 .blog-subtitle {
-    color: rgb(100, 90, 75);
+    color: #3b3427;
     font-size: 1.1rem;
 }
 
@@ -2898,7 +3080,7 @@ button {
     padding: 1.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
-    border-left: 4px solid #2e8eff;
+    border-left: 4px solid #a5c9e5;
 }
 
 .blog-card:hover {
