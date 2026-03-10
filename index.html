@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta Configuration -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Cheyenne - Home</title>
-
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Font Preloading for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Hamburger Button (Mobile) -->
+<body class="funky-home">
+    <!-- Decorative scattered stickers -->
+    <img src="assets/images/green_star.png" alt="" class="deco-sticker funky-star-1">
+    <img src="assets/images/gold_star.png" alt="" class="deco-sticker funky-star-2">
+    <img src="assets/images/red_star.png" alt="" class="deco-sticker funky-star-3">
+    <img src="assets/images/spiral_star.png" alt="" class="deco-sticker funky-star-4">
+    <img src="assets/images/flower_button.png" alt="" class="deco-sticker funky-flower-1">
+    <img src="assets/images/flower_button_2.png" alt="" class="deco-sticker funky-flower-2">
+    <img src="assets/images/heart_button.png" alt="" class="deco-sticker funky-heart">
+    <img src="assets/images/patchwork_star.png" alt="" class="deco-sticker funky-star-5">
+
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
     </button>
-    <!-- Top Bar -->
+
     <div class="top-bar">
         <div class="top-left">
-            <!-- Nav Bar -->
-            <img src="assets/images/stars-left.png" alt="Name" class="left-stars">
+            <img src="assets/images/stars-left.png" alt="" class="left-stars">
             <nav class="nav-links">
-                <a href="pages/projects.html">Projects</a>
-                <a href="pages/blog.html">Blog</a>
-            </nav>
-            <img src="assets/images/LOGO.png" alt="Name" class="top-logo">
-            <nav class="nav-links">
+                <!-- <a href="pages/projects.html">Projects</a>
+                <a href="pages/blog.html">Blog</a> -->
                 <a href="pages/about.html">About</a>
+            </nav>
+            <a href="index.html"><img src="assets/images/LOGO.png" alt="Logo" class="top-logo"></a>
+            <nav class="nav-links">
+                <!-- <a href="pages/about.html">About</a> -->
                 <a href="pages/resume.html">Resume</a>
             </nav>
-            <img src="assets/images/stars-right.png" alt="Name" class="right-stars">
+            <img src="assets/images/stars-right.png" alt="" class="right-stars">
         </div>
-    
     </div>
 
-    <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav-overlay">
         <nav class="mobile-nav">
-            <a href="pages/projects.html" class="mobile-nav-link">Projects</a>
-            <a href="pages/blog.html" class="mobile-nav-link">Blog</a>
+            <!-- <a href="pages/projects.html" class="mobile-nav-link">Projects</a>
+            <a href="pages/blog.html" class="mobile-nav-link">Blog</a> -->
             <a href="pages/about.html" class="mobile-nav-link">About</a>
             <a href="pages/resume.html" class="mobile-nav-link">Resume</a>
         </nav>
     </div>
 
-    <!-- Main Header Section -->
-    <header>
-    </header>
-    
-    <!-- Body Section -->
-    <p class="main-text"> Hiya! My name is <b>cheyenne</b>. <br> I am a information technology student majoring in AI.</p>
-    
-    <!-- Footer -->
-    <footer>
+    <main class="funky-container">
+        <!-- Hero Section -->
+        <section class="funky-hero">
+            <div class="funky-photo-area">
+                <div class="funky-washi tape-1"></div>
+                <div class="funky-washi tape-2"></div>
+                <div class="funky-polaroid">
+                    <img src="assets/images/me.png" alt="Cheyenne" class="funky-photo">
+                    <span class="funky-caption">me c:</span>
+                </div>
+            </div>
+            
+            <div class="funky-intro">
+                <h1 class="funky-title">
+                    <span class="funky-hi">Hiya!</span>
+                    <span class="funky-name">I'm Cheyenne</span>
+                </h1>
+                <p class="funky-tagline">IT student majoring in AI • Creative coder • Frog enthusiast</p>
+                <div class="funky-badges">
+                    <span class="funky-badge badge-1">AI Enthusiast</span>
+                    <span class="funky-badge badge-2">Creative Coder</span>
+                    <span class="funky-badge badge-3">Problem Solver</span>
+                    <span class="funky-badge badge-4">Certified Frog Lover</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote -->
+        <section class="funky-quote-section">
+            <div class="funky-note">
+                <img src="assets/images/quote.png" alt="" class="quote">
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="funky-cta">
+            <p class="cta-text">Want to know more?</p>
+            <a href="pages/resume.html" class="funky-btn">
+                <span>Check Out My Resume</span>
+                <span class="btn-arrow">→</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- <footer>
         <nav aria-label="Footer navigation">
-        <a href="pages/about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
+            <a href="pages/about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
         </nav>
-    </footer>
-    
-    <!-- JavaScript File -->
+    </footer> -->
+
     <script src="scripts/main.js"></script>
 </body>
 </html>

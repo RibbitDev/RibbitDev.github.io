@@ -6,134 +6,130 @@
     <title>About - Cheyenne</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="scrapbook-body">
-    <!-- Hamburger Button (Mobile) -->
+<body class="playful-about">
+    <div class="floating-shapes">
+        <span class="shape shape-1">✨</span>
+        <span class="shape shape-2">🌟</span>
+        <span class="shape shape-3">💫</span>
+        <span class="shape shape-4">⭐</span>
+        <span class="shape shape-5">🐸</span>
+        <span class="shape shape-6">✦</span>
+    </div>
+
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
     </button>
 
-    <!-- Top Bar -->
-    <div class="top-bar scrapbook-nav">
+    <div class="top-bar">
         <div class="top-left">
-            <img src="../assets/images/stars-left.png" alt="Name" class="left-stars">
+            <img src="../assets/images/stars-left.png" alt="" class="left-stars">
             <nav class="nav-links">
-                <a href="projects.html">Projects</a>
-                <a href="blog.html">Blog</a>
-            </nav>
-            <img src="../assets/images/LOGO.png" alt="Name" class="top-logo">
-            <nav class="nav-links">
+                <!-- <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a> -->
                 <a href="about.html">About</a>
+            </nav>
+            <a href="../index.html"><img src="../assets/images/LOGO.png" alt="Logo" class="top-logo"></a>
+            <nav class="nav-links">
+                <!-- <a href="about.html">About</a> -->
                 <a href="resume.html">Resume</a>
             </nav>
-            <img src="../assets/images/stars-right.png" alt="Name" class="right-stars">
+            <img src="../assets/images/stars-right.png" alt="" class="right-stars">
         </div>
     </div>
 
-    <!-- Mobile Navigation Overlay -->
     <div class="mobile-nav-overlay">
         <nav class="mobile-nav">
-            <a href="projects.html" class="mobile-nav-link">Projects</a>
-            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <!-- <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a> -->
             <a href="about.html" class="mobile-nav-link">About</a>
             <a href="resume.html" class="mobile-nav-link">Resume</a>
         </nav>
     </div>
 
-    <!-- Main Content -->
-    <main class="scrapbook-container">
-        
-        <!-- Paper texture background -->
-        <div class="paper-texture"></div>
-        
-        <!-- Decorative Stickers -->
-        <img src="../assets/images/gold_star.png" alt="" class="fixed-sticker" style="width: 40px; top: 100px; left: 3%;">
-        <img src="../assets/images/green_star.png" alt="" class="fixed-sticker" style="width: 35px; top: 280px; right: 5%;">
-        <img src="../assets/images/red_star.png" alt="" class="fixed-sticker" style="width: 30px; top: 480px; left: 8%;">
-        <img src="../assets/images/flower_button.png" alt="" class="fixed-sticker" style="width: 45px; top: 650px; right: 10%;">
-        <img src="../assets/images/brown_star.png" alt="" class="fixed-sticker" style="width: 35px; bottom: 200px; left: 5%;">
-        <img src="../assets/images/spiral_star.png" alt="" class="fixed-sticker" style="width: 40px; top: 80px; right: 15%;">
-        
-        <!-- Page Title -->
-        <section class="about-hero-section">
-            <h1 class="about-page-title">About Me</h1>
-        </section>
-
-        <!-- First Row: About Me + Photo -->
-        <section class="about-row-1">
-            
-            <!-- About Me Card -->
-            <div class="about-card-crafty" style="--rotation: -2deg;">
-                <div class="washi-tape pink" style="top: -10px; left: 30px;"></div>
-                <div class="paper-overlay"></div>
-                <h2 class="crafty-title">Hello!</h2>
-                <p class="crafty-text">I'm Cheyenne — an IT student majoring in AI with a passion for creating meaningful technology that helps people.</p>
-                <p class="crafty-text">I love blending creativity with code to build things that make a difference. When I'm not studying or coding, you'll find me exploring my creative side through various hobbies.</p>
-                <div class="cute-decoration">✦</div>
+    <main class="playful-container">
+        <section class="playful-hero">
+            <div class="playful-photo-wrapper">
+                <!-- <div class="playful-photo-frame"> -->
+                    <!-- <div class="playful-photo-inner"> -->
+                        <img src="../assets/images/me.png" alt="Cheyenne">
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
-
-            <!-- Photo Polaroid -->
-            <div class="polaroid-crafty" style="--rotation: 3deg;">
-                <img src="../assets/images/me.png" class="polaroid-crafty">
-            </div>
-
-        </section>
-
-        <!-- Second Row: Interests + Hobbies -->
-        <section class="about-row-2">
-            
-            <!-- Interests Card -->
-            <div class="crafty-card" style="--rotation: -1deg;">
-                <div class="washi-tape lavender" style="top: -8px; left: 20px;"></div>
-                <div class="card-icon">⭐</div>
-                <h3 class="crafty-card-title">Interests</h3>
-                <ul class="crafty-list">
-                    <li>Artificial Intelligence & Machine Learning</li>
-                    <li>Web Development</li>
-                    <li>Human-Centered Technology</li>
-                    <li>Neural Networks</li>
-                </ul>
-            </div>
-
-            <!-- Hobbies Card -->
-            <div class="crafty-card" style="--rotation: 2deg;">
-                <div class="washi-tape pink" style="top: -8px; right: 20px;"></div>
-                <div class="card-icon">💝</div>
-                <h3 class="crafty-card-title">Hobbies</h3>
-                <ul class="crafty-list">
-                    <li>Painting</li>
-                    <li>Photography</li>
-                    <li>Reading</li>
-                    <li>Tennis</li>
-                </ul>
-            </div>
-
-            <!-- Fun Fact Card -->
-            <div class="crafty-card funfact-crafty" style="--rotation: -3deg;">
-                <div class="card-icon">🐸</div>
-                <h3 class="crafty-card-title">Fun Fact</h3>
-                <p class="crafty-text-small">Frogs have captured my heart — ancient, mystical creatures full of quiet magic. Green is definitely my soul color! 💚</p>
-                <div class="color-dot green"></div>
-            </div>
-
-        </section>
-
-        <!-- Third Row: Quote -->
-        <section class="about-row-3">
-            <div class="quote-crafty-card" style="--rotation: 1deg;">
-                <div class="washi-tape sage" style="top: -10px; left: 40px;"></div>
-                <img src="../assets/images/quote.png" alt="" class="quote-image">
+            <div class="playful-intro">
+                <p class="playful-greeting">Hello there! </p>
+                <h1 class="playful-name">I'm <span>Cheyenne</span></h1>
+                <p class="playful-tagline">An IT student majoring in AI with a passion for creating meaningful technology that helps people. I love blending creativity with code to build things that make a difference.</p>
+                <div class="playful-badges">
+                    <span class="badge badge-blue">AI Enthusiast</span>
+                    <span class="badge badge-coral">Creative Coder</span>
+                    <span class="badge badge-yellow">Problem Solver</span>
+                    <span class="badge badge-green">Certified Frog Lover</span>
+                </div>
             </div>
         </section>
 
+        <section class="playful-section">
+            <h2 class="playful-section-title">What I'm All About</h2>
+            <div class="playful-cards">
+                <div class="playful-card playful-card-blue">
+                    <span class="playful-card-icon">🎓</span>
+                    <h3 class="playful-card-title">Student & Learner</h3>
+                    <p class="playful-card-text">Currently pursuing a Bachelor of IT majoring in AI. Always eager to learn new technologies and expand my knowledge in machine learning and neural networks.</p>
+                </div>
+                <div class="playful-card playful-card-coral">
+                    <span class="playful-card-icon">💻</span>
+                    <h3 class="playful-card-title">Developer</h3>
+                    <p class="playful-card-text">Passionate about building web applications and exploring the intersection of design and functionality. Love turning ideas into interactive experiences.</p>
+                </div>
+                <div class="playful-card playful-card-yellow">
+                    <span class="playful-card-icon">🎨</span>
+                    <h3 class="playful-card-title">Creative Soul</h3>
+                    <p class="playful-card-text">When not coding, you'll find me painting, taking photos, or getting lost in a good book. Creativity fuels my problem-solving approach.</p>
+                </div>
+                <div class="playful-card playful-card-green">
+                    <span class="playful-card-icon">🌱</span>
+                    <h3 class="playful-card-title">Growing Daily</h3>
+                    <p class="playful-card-text">Believer in continuous improvement and lifelong learning. Every challenge is an opportunity to grow and become a better version of myself.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="playful-section">
+            <h2 class="playful-section-title">Things I Love</h2>
+            <div class="playful-interests">
+                <div class="interest-tag"><span class="icon">🤖</span> Artificial Intelligence</div>
+                <div class="interest-tag"><span class="icon">🧠</span> Machine Learning</div>
+                <div class="interest-tag"><span class="icon">🌐</span> Web Development</div>
+                <div class="interest-tag"><span class="icon">🎨</span> Painting</div>
+                <div class="interest-tag"><span class="icon">📷</span> Photography</div>
+                <div class="interest-tag"><span class="icon">📚</span> Reading</div>
+                <div class="interest-tag"><span class="icon">🎾</span> Tennis</div>
+                <div class="interest-tag"><span class="icon">🐸</span> Frogs!</div>
+            </div>
+        </section>
+
+        <section class="playful-section">
+            <div class="playful-quote">
+                <p class="playful-quote-text">The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.</p>
+                <p class="playful-quote-author">— Steve Jobs</p>
+            </div>
+        </section>
+
+        <section class="playful-cta">
+            <h2 class="playful-cta-title">Let's Connect!</h2>
+            <a href="resume.html" class="playful-cta-btn">
+                <span>View My Resume</span>
+                <span>→</span>
+            </a>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="scrapbook-footer">
+    <footer>
         <nav aria-label="Footer navigation">
             <a href="about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
         </nav>
