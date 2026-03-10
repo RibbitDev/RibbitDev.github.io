@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Cheyenne</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <p>Blog coming soon...</p>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-left">
+            <img src="../assets/images/stars-left.png" alt="Name" class="left-stars">
+            <nav class="nav-links">
+                <a href="projects.html">Projects</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+            <img src="../assets/images/LOGO.png" alt="Name" class="top-logo">
+            <nav class="nav-links">
+                <a href="about.html">About</a>
+                <a href="resume.html">Resume</a>
+            </nav>
+            <img src="../assets/images/stars-right.png" alt="Name" class="right-stars">
+        </div>
+        
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="resume.html" class="mobile-nav-link">Resume</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="blog-container">
+        
+        <header class="blog-header">
+            <h1 class="blog-title">Blog</h1>
+            <p class="blog-subtitle">Thoughts, tutorials, and adventures in tech</p>
+        </header>
+
+        <div class="blog-list">
+            
+            <!-- Blog Post 1 -->
+            <article class="blog-card">
+                <time class="blog-date">March 2026</time>
+                <h2 class="blog-post-title">Getting Started with AI: A Beginner's Guide</h2>
+                <p class="blog-excerpt">Artificial Intelligence is transforming the world around us. In this post, I'll share my journey into AI, the resources that helped me get started, and tips for anyone curious about diving into machine learning.</p>
+                <a href="#" class="blog-read-more">Read More →</a>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card">
+                <time class="blog-date">February 2026</time>
+                <h2 class="blog-post-title">My Journey in Tech: From Curiosity to Code</h2>
+                <p class="blog-excerpt">Reflecting on how I discovered my passion for technology, the challenges I faced learning to code, and the moments that made it all worth it. Plus some advice for fellow beginners!</p>
+                <a href="#" class="blog-read-more">Read More →</a>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card">
+                <time class="blog-date">January 2026</time>
+                <h2 class="blog-post-title">Design Inspiration: Creating Beautiful Interfaces</h2>
+                <p class="blog-excerpt">Exploring the principles of good design and how they apply to web development. I'll share some of my favorite design resources, tips for creating user-friendly experiences, and lessons learned from building this website.</p>
+                <a href="#" class="blog-read-more">Read More →</a>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card">
+                <time class="blog-date">December 2025</time>
+                <h2 class="blog-post-title">Learning Machine Learning: My First ML Project</h2>
+                <p class="blog-excerpt">Documenting my first hands-on machine learning project: what I built, the challenges I encountered, and what I learned about working with neural networks and training models.</p>
+                <a href="#" class="blog-read-more">Read More →</a>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-card">
+                <time class="blog-date">November 2025</time>
+                <h2 class="blog-post-title">The Future of AI: Thoughts and Predictions</h2>
+                <p class="blog-excerpt">As AI continues to evolve, what does the future hold? Sharing my thoughts on where I see AI heading, the ethical considerations we need to address, and the exciting possibilities ahead.</p>
+                <a href="#" class="blog-read-more">Read More →</a>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <a href="about.html">About</a> &nbsp; • &nbsp; Privacy Policy &nbsp; • &nbsp; Contact
+        </nav>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

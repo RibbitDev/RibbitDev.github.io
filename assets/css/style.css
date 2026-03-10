@@ -1205,3 +1205,1412 @@ button {
     }
 }
 
+/* ===================
+   Whimsigoth 90s Light Theme
+   =================== */
+.whimsigoth-90s-body {
+    background: linear-gradient(180deg, #faf8f5 0%, #f5f0f5 50%, #faf8f5 100%);
+    min-height: 100vh;
+    color: #4a4035;
+    position: relative;
+}
+
+/* Lace pattern overlay */
+.whimsigoth-90s-body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(200, 180, 170, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(180, 160, 180, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Top bar override */
+.whimsigoth-90s-nav {
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(180, 160, 170, 0.2);
+}
+
+.whimsigoth-90s-nav .nav-links a {
+    color: #4a4035;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+}
+
+.whimsigoth-90s-nav .nav-links a:hover {
+    color: #b0858a;
+    text-shadow: 0 0 8px rgba(176, 133, 138, 0.3);
+}
+
+.whimsigoth-90s-nav .hamburger-line {
+    background-color: #4a4035;
+}
+
+/* Container */
+.whimsigoth-90s-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 140px 20px 60px;
+    position: relative;
+}
+
+/* Decorative Elements */
+.deco-moon {
+    position: absolute;
+    top: 120px;
+    right: 12%;
+    font-size: 3.5rem;
+    color: #d4c4b8;
+    opacity: 0.4;
+    animation: float 7s ease-in-out infinite;
+    font-family: serif;
+}
+
+.deco-star-1 {
+    position: absolute;
+    top: 180px;
+    left: 6%;
+    font-size: 1.75rem;
+    color: #b0858a;
+    opacity: 0.35;
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.deco-star-2 {
+    position: absolute;
+    top: 320px;
+    right: 18%;
+    font-size: 1.25rem;
+    color: #8a9a7a;
+    opacity: 0.4;
+    animation: twinkle 4s ease-in-out infinite 1s;
+}
+
+.deco-frog-1 {
+    position: absolute;
+    top: 450px;
+    left: 10%;
+    font-size: 1.25rem;
+    opacity: 0.35;
+    animation: float 6s ease-in-out infinite 0.5s;
+}
+
+.deco-frog-2 {
+    position: absolute;
+    bottom: 280px;
+    right: 10%;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: float 8s ease-in-out infinite 1.5s;
+}
+
+.deco-frog-3 {
+    position: absolute;
+    top: 600px;
+    right: 5%;
+    font-size: 1rem;
+    opacity: 0.35;
+    animation: float 5s ease-in-out infinite 2s;
+}
+
+/* Hero Section */
+.whimsigoth-90s-hero {
+    margin-bottom: 4rem;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Vintage Cream Frame */
+.vintage-frame {
+    position: relative;
+    max-width: 260px;
+    padding: 15px;
+    background: linear-gradient(145deg, #f5f0e8, #ebe4db);
+    border: 2px solid #d4c4b8;
+    border-radius: 4px;
+    box-shadow: 
+        0 4px 20px rgba(180, 160, 170, 0.2),
+        inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.vintage-frame::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid #d4c4b8;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.frame-ornament {
+    position: absolute;
+    font-size: 1rem;
+    color: #b0858a;
+}
+
+.frame-ornament.top-left { top: -8px; left: -6px; }
+.frame-ornament.top-right { top: -8px; right: -6px; transform: scaleX(-1); }
+.frame-ornament.bottom-left { bottom: -8px; left: -6px; transform: scaleY(-1); }
+.frame-ornament.bottom-right { bottom: -8px; right: -6px; transform: scale(-1); }
+
+.frame-inner {
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid #d4c4b8;
+}
+
+.profile-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-caption {
+    display: block;
+    text-align: center;
+    margin-top: 0.75rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #8a7a6e;
+    font-style: italic;
+}
+
+/* Intro */
+.whimsigoth-90s-intro {
+    text-align: center;
+}
+
+.whimsigoth-90s-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #4a4035;
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.whimsigoth-90s-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: #b0858a;
+    margin: 0 0 1.5rem;
+    letter-spacing: 0.08em;
+    font-style: italic;
+}
+
+.whimsigoth-90s-desc {
+    font-size: 1.05rem;
+    color: #6a5f55;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Grid */
+.whimsigoth-90s-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* Cards */
+.whimsigoth-90s-card {
+    background: linear-gradient(145deg, #fefdfb, #f8f4f0);
+    border: 1px solid #e0d8d0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 12px rgba(180, 160, 170, 0.1);
+}
+
+.whimsigoth-90s-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(180, 160, 170, 0.15);
+    border-color: #b0858a;
+}
+
+/* Arch decoration */
+.card-arch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 30px;
+    border: 2px solid #d4c4b8;
+    border-top: none;
+    border-radius: 0 0 40px 40px;
+    background: transparent;
+}
+
+.card-arch-small {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 15px;
+    border: 1.5px solid #d4c4b8;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    background: transparent;
+}
+
+.card-gem,
+.quote-gem {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #faf8f5;
+    padding: 0 8px;
+    color: #b0858a;
+    font-size: 0.9rem;
+}
+
+/* About Card */
+.whimsigoth-90s-card.about-card-90s {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card-title-90s {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #4a4035;
+    margin: 0.75rem 0 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.card-text-90s {
+    color: #6a5f55;
+    line-height: 1.8;
+    margin-bottom: 0.85rem;
+    font-size: 0.95rem;
+}
+
+.card-text-90s:last-child {
+    margin-bottom: 0;
+}
+
+/* Hobby Cards */
+.whimsigoth-90s-card.hobby-card-90s {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.hobby-icon-90s {
+    font-size: 2.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.hobby-title-90s {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    color: #4a4035;
+    margin: 0 0 0.2rem;
+    font-weight: 500;
+}
+
+.hobby-desc-90s {
+    font-size: 0.75rem;
+    color: #8a7a6e;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Fun Fact Cards */
+.whimsigoth-90s-card.funfact-card-90s {
+    text-align: center;
+}
+
+.frog-sparkle {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.color-gem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    background: radial-gradient(circle at 30% 30%, #7ab87a, #5a9a5a);
+    box-shadow: 
+        0 0 15px rgba(90, 154, 90, 0.3),
+        inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-gem.green {
+    background: radial-gradient(circle at 30% 30%, #8ac48a, #6aa86a);
+    box-shadow: 
+        0 0 15px rgba(106, 168, 106, 0.3),
+        inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.funfact-title-90s {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #4a4035;
+    margin: 0 0 0.4rem;
+    font-weight: 500;
+}
+
+.funfact-desc-90s {
+    color: #6a5f55;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.85rem;
+}
+
+/* Quote Card */
+.whimsigoth-90s-card.quote-card-90s {
+    text-align: center;
+    grid-column: span 2;
+}
+
+.quote-text-90s {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    color: #4a4035;
+    font-style: italic;
+    margin: 0.5rem 0 0.6rem;
+    line-height: 1.6;
+}
+
+.quote-author-90s {
+    color: #b0858a;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Connect Card */
+.whimsigoth-90s-card.connect-card-90s {
+    grid-column: span 2;
+    text-align: center;
+    background: linear-gradient(145deg, #f5f0f0, #ebe5e8);
+}
+
+.connect-title-90s {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    color: #4a4035;
+    margin: 0.5rem 0 0.6rem;
+    font-weight: 500;
+}
+
+.connect-desc-90s {
+    color: #6a5f55;
+    margin: 0 0 1.25rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.connect-btn-90s {
+    display: inline-block;
+    background: linear-gradient(135deg, #b0858a, #9a7278);
+    color: #fefdfb;
+    text-decoration: none;
+    padding: 0.65rem 1.75rem;
+    border-radius: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid #b0858a;
+}
+
+.connect-btn-90s:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(176, 133, 138, 0.35);
+    background: linear-gradient(135deg, #c0959a, #b0858a);
+}
+
+/* Footer */
+.whimsigoth-90s-footer {
+    background: rgba(250, 248, 245, 0.95);
+    border-top: 1px solid rgba(180, 160, 170, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.whimsigoth-90s-footer nav a {
+    color: #8a7a6e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.whimsigoth-90s-footer nav a:hover {
+    color: #b0858a;
+}
+
+/* Whimsigoth 90s Mobile */
+@media (max-width: 1024px) {
+    .whimsigoth-90s-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .whimsigoth-90s-card.about-card-90s {
+        grid-column: span 2;
+    }
+    
+    .whimsigoth-90s-card.quote-card-90s,
+    .whimsigoth-90s-card.connect-card-90s {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .whimsigoth-90s-container {
+        padding: 110px 16px 40px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .vintage-frame {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .whimsigoth-90s-intro {
+        text-align: center;
+    }
+    
+    .whimsigoth-90s-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .whimsigoth-90s-card.about-card-90s,
+    .whimsigoth-90s-card.quote-card-90s,
+    .whimsigoth-90s-card.connect-card-90s {
+        grid-column: span 1;
+    }
+    
+    /* Hide decorative elements on mobile */
+    .deco-moon,
+    .deco-star-1,
+    .deco-star-2,
+    .deco-frog-1,
+    .deco-frog-2,
+    .deco-frog-3 {
+        display: none;
+    }
+}
+
+/* ===================
+   Projects Page (Scrapbook Style)
+   =================== */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+}
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.projects-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: rgb(68, 61, 49);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.projects-subtitle {
+    color: rgb(100, 90, 75);
+    font-size: 1.1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: linear-gradient(145deg, #fffef8, #fafaf8);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #e8e4dc, #d0ccc5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+}
+
+.project-desc {
+    color: rgb(100, 90, 75);
+    margin: 0 0 1rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-tag {
+    background: rgb(240, 238, 232);
+    color: rgb(68, 61, 49);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-link {
+    display: inline-block;
+    color: #2e8eff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #1a6fd8;
+}
+
+/* ===================
+   Messy Scrapbook About Page
+   =================== */
+.scrapbook-body {
+    background: #faf8f5;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Paper texture background */
+.paper-texture {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Confetti decorations */
+.confetti {
+    position: fixed;
+    font-size: 1.5rem;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 1;
+    animation: floatConfetti 8s ease-in-out infinite;
+}
+
+.confetti.c1 { top: 10%; left: 5%; animation-delay: 0s; color: #b0858a; }
+.confetti.c2 { top: 25%; right: 10%; animation-delay: 1s; color: #8a9a7a; }
+.confetti.c3 { top: 50%; left: 3%; animation-delay: 2s; color: #b08a9a; }
+.confetti.c4 { top: 70%; right: 5%; animation-delay: 3s; color: #9a8ab0; }
+.confetti.c5 { top: 85%; left: 8%; animation-delay: 4s; color: #8aa09a; }
+
+@keyframes floatConfetti {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* Top bar */
+.scrapbook-nav {
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(180, 160, 170, 0.2);
+    position: relative;
+    z-index: 100;
+}
+
+.scrapbook-nav .nav-links a {
+    color: #4a4035;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+}
+
+.scrapbook-nav .nav-links a:hover {
+    color: #b0858a;
+}
+
+.scrapbook-nav .hamburger-line {
+    background-color: #4a4035;
+}
+
+/* Container */
+.scrapbook-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 100px 20px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Draggable Stickers */
+.sticker {
+    position: fixed;
+    font-size: 2rem;
+    cursor: grab;
+    z-index: 50;
+    transition: transform 0.1s ease;
+    user-select: none;
+    filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.15));
+}
+
+.sticker:hover {
+    transform: scale(1.2) rotate(10deg) !important;
+}
+
+.sticker:active {
+    cursor: grabbing;
+}
+
+/* Magic 8-Ball */
+.magic-8ball {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 30% 30%, #2a2a2a, #0a0a0a);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 50;
+    box-shadow: 
+        0 5px 20px rgba(0,0,0,0.3),
+        inset 0 -5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+    animation: wobbleBall 4s ease-in-out infinite;
+}
+
+.magic-8ball:hover {
+    transform: scale(1.1);
+}
+
+@keyframes wobbleBall {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+.magic-8ball .8ball-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 30% 30%, #1a1a2e, #0f0f1a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magic-8ball .8ball-window {
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle, #1a1a2e, #000);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+}
+
+.magic-8ball .8ball-message {
+    font-size: 1.2rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.magic-8ball .8ball-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    color: #8a7a6e;
+    white-space: nowrap;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Hero Section */
+.scrapbook-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    min-height: 400px;
+}
+
+/* Polaroid Frame */
+.polaroid-frame {
+    position: relative;
+    background: #fff;
+    padding: 12px 12px 40px 12px;
+    box-shadow: 
+        3px 5px 15px rgba(0,0,0,0.15),
+        1px 2px 5px rgba(0,0,0,0.1);
+    transform: rotate(var(--rotation));
+    z-index: var(--z);
+    transition: transform 0.3s ease;
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.02) translateY(-5px);
+    box-shadow: 5px 8px 25px rgba(0,0,0,0.2);
+}
+
+.polaroid-frame .photo-inner {
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.polaroid-frame .profile-photo {
+    width: 220px;
+    height: auto;
+    display: block;
+    filter: sepia(0.1);
+}
+
+.polaroid-frame .photo-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Pushpins */
+.pushpin {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.pushpin::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+}
+
+.pushpin.red { background: #c0392b; }
+.pushpin.green { background: #27ae60; }
+.pushpin.yellow { background: #f1c40f; }
+.pushpin.purple { background: #8e44ad; }
+.pushpin.orange { background: #e67e22; }
+.pushpin.pink { background: #e91e63; }
+
+/* Washi Tape */
+.washi-tape {
+    position: absolute;
+    width: 45px;
+    height: 16px;
+    opacity: 0.85;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    z-index: 5;
+}
+
+.washi-tape.pink {
+    background: linear-gradient(135deg, #d4a5a5, #c99696);
+    transform: rotate(-5deg);
+}
+
+.washi-tape.sage {
+    background: linear-gradient(135deg, #a5b8a5, #96a896);
+    transform: rotate(5deg);
+}
+
+.washi-tape.lavender {
+    background: linear-gradient(135deg, #b8a5c9, #a696b8);
+    transform: rotate(-3deg);
+}
+
+/* Paper Clips */
+.paper-clip {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    border: 3px solid;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.paper-clip.silver {
+    border-color: #c0c0c0;
+    background: transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.paper-clip.gold {
+    border-color: #d4af37;
+    background: transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.paper-clip.bronze {
+    border-color: #cd7f32;
+    background: transparent;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Sticky Note */
+.sticky-note {
+    background: linear-gradient(145deg, #fef9c3, #fef08a);
+    padding: 1.25rem;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.1);
+    transform: rotate(var(--rotation));
+    z-index: var(--z);
+    max-width: 200px;
+    position: relative;
+}
+
+.sticky-note::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 2px;
+}
+
+.sticky-note .note-content h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    color: #4a4035;
+    margin: 0 0 0.5rem;
+}
+
+.sticky-note .note-content p {
+    font-size: 0.85rem;
+    color: #6a5f55;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Scrapbook Card Base */
+.scrapbook-card {
+    background: linear-gradient(145deg, #fefdfb, #f8f4f0);
+    border: 1px solid #e8e0d8;
+    padding: 1.25rem;
+    box-shadow: 
+        2px 4px 12px rgba(0,0,0,0.08),
+        1px 2px 4px rgba(0,0,0,0.05);
+    transform: rotate(var(--rotation));
+    z-index: var(--z);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.scrapbook-card:hover {
+    transform: rotate(0deg) scale(1.03) translateY(-5px);
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.12);
+    z-index: 100 !important;
+}
+
+/* Torn Edges */
+.torn-edge-top {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(180deg, #faf8f5 0%, transparent 100%);
+    clip-path: polygon(
+        0% 100%, 2% 20%, 5% 80%, 8% 30%, 12% 90%, 15% 25%, 20% 85%, 
+        25% 35%, 30% 95%, 35% 20%, 40% 80%, 45% 30%, 50% 90%, 
+        55% 25%, 60% 85%, 65% 35%, 70% 95%, 75% 20%, 80% 80%, 
+        85% 30%, 90% 90%, 95% 25%, 100% 100%
+    );
+}
+
+.torn-edge-bottom {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(0deg, #faf8f5 0%, transparent 100%);
+    clip-path: polygon(
+        0% 0%, 3% 70%, 7% 20%, 10% 80%, 15% 30%, 20% 90%, 
+        25% 40%, 30% 85%, 35% 25%, 40% 75%, 45% 35%, 50% 95%, 
+        55% 30%, 60% 80%, 65% 40%, 70% 90%, 75% 25%, 80% 70%, 
+        85% 35%, 90% 85%, 95% 30%, 100% 0%
+    );
+}
+
+/* About Card */
+.about-card-scrapbook {
+    max-width: 320px;
+    min-height: 200px;
+}
+
+.scrapbook-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #4a4035;
+    margin: 0 0 0.75rem;
+    text-align: center;
+}
+
+.scrapbook-text {
+    color: #6a5f55;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+/* Flip Card */
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(145deg, #f5f0e8, #ebe5db);
+    transform: rotateY(180deg);
+    padding: 1.25rem;
+    border-radius: 4px;
+}
+
+.flip-hint {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #8a7a6e;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.flip-detail {
+    color: #6a5f55;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Hobby Cards */
+.hobby-card-scrapbook {
+    width: 140px;
+    text-align: center;
+}
+
+.hobby-icon-scrap {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.hobby-title-scrap {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    color: #4a4035;
+    margin: 0 0 0.2rem;
+}
+
+.hobby-desc-scrap {
+    font-size: 0.7rem;
+    color: #8a7a6e;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Quote Card */
+.quote-card-scrapbook {
+    max-width: 250px;
+    background: linear-gradient(145deg, #f5f0f0, #ebe5e8);
+}
+
+.quote-text-scrap {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    color: #4a4035;
+    font-style: italic;
+    margin: 0 0 0.5rem;
+    line-height: 1.6;
+}
+
+.quote-author-scrap {
+    font-size: 0.8rem;
+    color: #b0858a;
+    font-style: italic;
+}
+
+.stamp {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 1.5rem;
+    color: #b0858a;
+    transform: rotate(20deg);
+    opacity: 0.6;
+}
+
+/* Fun Fact Cards */
+.funfact-card-scrapbook {
+    max-width: 180px;
+    text-align: center;
+    background: linear-gradient(145deg, #f0fff4, #e8f5e9);
+}
+
+.funfact-card-scrapbook.green-card {
+    background: linear-gradient(145deg, #f0fff4, #e6f4ea);
+}
+
+.frog-emoji {
+    font-size: 1.75rem;
+    margin-bottom: 0.3rem;
+}
+
+.funfact-title-scrap {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    color: #4a4035;
+    margin: 0 0 0.4rem;
+}
+
+.funfact-desc-scrap {
+    font-size: 0.8rem;
+    color: #6a5f55;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.color-gem-scrap {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    background: radial-gradient(circle at 30% 30%, #8ac48a, #6aa86a);
+    box-shadow: 0 2px 8px rgba(90, 154, 90, 0.3);
+}
+
+/* Connect Card */
+.connect-card-scrapbook {
+    max-width: 220px;
+    text-align: center;
+    background: linear-gradient(145deg, #f5f0f5, #ebe5f0);
+}
+
+.ribbon-bow {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    background: #b0858a;
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2);
+}
+
+.ribbon-bow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background: #9a7278;
+    border-radius: 50%;
+}
+
+.connect-title-scrap {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: #4a4035;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.connect-desc-scrap {
+    font-size: 0.8rem;
+    color: #6a5f55;
+    margin: 0 0 1rem;
+    line-height: 1.5;
+}
+
+.connect-btn-scrap {
+    display: inline-block;
+    background: linear-gradient(135deg, #b0858a, #9a7278);
+    color: #fefdfb;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.connect-btn-scrap:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(176, 133, 138, 0.35);
+}
+
+/* Scrapbook Rows */
+.scrapbook-row-2,
+.scrapbook-row-3,
+.scrapbook-row-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.scrapbook-footer {
+    background: rgba(250, 248, 245, 0.95);
+    border-top: 1px solid rgba(180, 160, 170, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.scrapbook-footer nav a {
+    color: #8a7a6e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.scrapbook-footer nav a:hover {
+    color: #b0858a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .scrapbook-container {
+        padding: 90px 16px 40px;
+    }
+    
+    .scrapbook-hero,
+    .scrapbook-row-2,
+    .scrapbook-row-3,
+    .scrapbook-row-4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .scrapbook-card,
+    .polaroid-frame,
+    .sticky-note {
+        transform: rotate(0deg) !important;
+    }
+    
+    .scrapbook-card:hover {
+        transform: translateY(-3px) !important;
+    }
+    
+    .magic-8ball {
+        width: 60px;
+        height: 60px;
+        bottom: 80px;
+        right: 15px;
+    }
+    
+    .magic-8ball .8ball-inner {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .magic-8ball .8ball-window {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .confetti {
+        display: none;
+    }
+    
+    .sticker {
+        display: none;
+    }
+}
+
+/* ===================
+   Blog Page (Scrapbook Style)
+   =================== */
+.blog-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 20px 60px;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.blog-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: rgb(68, 61, 49);
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.blog-subtitle {
+    color: rgb(100, 90, 75);
+    font-size: 1.1rem;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background: linear-gradient(145deg, #fffef8, #fafaf8);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #2e8eff;
+}
+
+.blog-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.blog-date {
+    color: rgb(120, 110, 95);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-title {
+    font-size: 1.35rem;
+    color: rgb(68, 61, 49);
+    margin: 0 0 0.75rem;
+    font-weight: 700;
+}
+
+.blog-excerpt {
+    color: rgb(100, 90, 75);
+    margin: 0 0 1rem;
+    line-height: 1.7;
+}
+
+.blog-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2e8eff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: gap 0.2s ease;
+}
+
+.blog-read-more:hover {
+    gap: 0.75rem;
+}
+
+/* Blog Mobile */
+@media (max-width: 768px) {
+    .projects-container,
+    .blog-container {
+        padding: 100px 16px 40px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
