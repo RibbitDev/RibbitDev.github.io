@@ -265,7 +265,7 @@ button {
     .hamburger-line {
         width: 24px;
         height: 2px;
-        background-color: rgb(68, 61, 49);
+        background-color: #3b3427;
         transition: all 0.3s ease;
     }
 
@@ -319,7 +319,7 @@ button {
     }
 
     .mobile-nav-link {
-        color: rgb(68, 61, 49);
+        color: #3b3427;
         font-family: 'Inter', serif;
         font-size: 2rem;
         font-weight: 600;
@@ -741,7 +741,7 @@ button {
 
 .skill-title {
     font-size: 1.15rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.75rem;
     font-weight: 700;
 }
@@ -773,7 +773,7 @@ button {
 
 .attribute-title {
     font-size: 1rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.5rem;
     font-weight: 700;
 }
@@ -807,7 +807,7 @@ button {
 }
 
 .licence-name {
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     font-weight: 500;
     font-size: 0.95rem;
 }
@@ -894,7 +894,7 @@ button {
     transform: translateX(-50%);
     font-family: 'Inter', Arial, sans-serif;
     font-size: 1.25rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     background: rgba(255, 254, 252, 0.9);
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
@@ -967,7 +967,7 @@ button {
 .hello-text {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 2.5rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 1rem;
 }
 
@@ -1081,7 +1081,7 @@ button {
 .card-title {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 1.75rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 1rem;
     position: relative;
 }
@@ -1140,7 +1140,7 @@ button {
 .hobby-title {
     font-size: 1rem;
     font-weight: 600;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.25rem;
 }
 
@@ -1175,7 +1175,7 @@ button {
 
 .funfact-text {
     font-weight: 600;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     font-size: 0.9rem;
 }
 
@@ -1220,13 +1220,13 @@ button {
     text-align: center;
     padding: 2rem;
     background: linear-gradient(145deg, #eff6ff, #dbeafe);
-    border-left: 4px solid #2e8eff;
+    border-left: 4px solid #a5c9e5;
 }
 
 .connect-title {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 1.75rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.75rem;
 }
 
@@ -1966,7 +1966,7 @@ button {
 
 .project-title {
     font-size: 1.25rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.5rem;
     font-weight: 700;
 }
@@ -1986,7 +1986,7 @@ button {
 
 .project-tag {
     background: rgb(240, 238, 232);
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -2039,9 +2039,9 @@ button {
 }
 
 .confetti.c1 { top: 10%; left: 5%; animation-delay: 0s; color: #e1786c; }
-.confetti.c2 { top: 25%; right: 10%; animation-delay: 1s; color: #8a9a7a; }
-.confetti.c3 { top: 50%; left: 3%; animation-delay: 2s; color: #b08a9a; }
-.confetti.c4 { top: 70%; right: 5%; animation-delay: 3s; color: #9a8ab0; }
+.confetti.c2 { top: 25%; right: 10%; animation-delay: 1s; color: #8aa979; }
+.confetti.c3 { top: 50%; left: 3%; animation-delay: 2s; color: #e1786c; }
+.confetti.c4 { top: 70%; right: 5%; animation-delay: 3s; color: #a5c9e5; }
 .confetti.c5 { top: 85%; left: 8%; animation-delay: 4s; color: #8aa09a; }
 
 @keyframes floatConfetti {
@@ -3102,7 +3102,7 @@ button {
 
 .blog-post-title {
     font-size: 1.35rem;
-    color: rgb(68, 61, 49);
+    color: #3b3427;
     margin: 0 0 0.75rem;
     font-weight: 700;
 }
@@ -3165,6 +3165,15 @@ button {
     opacity: 0.7;
     position: relative;
     padding: 2rem;
+}
+
+.blog-coming-soon {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #a5c9e5;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 }
 
